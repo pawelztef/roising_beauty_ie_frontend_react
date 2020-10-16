@@ -12,7 +12,7 @@ const Banner = (props) => {
           <div className="banner__wrapper">
             <div className="banner__item"
               style={{ 
-                backgroundImage: `url(${process.env.REACT_APP_DOMAIN+image.url})`
+                backgroundImage: `url(${process.env.REACT_APP_API_DOMAIN+image.url})`
               }}>
                 <div className="banner__item-top-layer">
                   <div className="banner__item-title">{title}</div>

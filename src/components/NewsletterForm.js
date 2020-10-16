@@ -33,7 +33,7 @@ class NewsletterForm extends React.Component {
     event.preventDefault()
     if(this.validator.allValid()) {
       try {
-        await Axios.post(process.env.REACT_APP_DOMAIN+"/newsletter-leads", {
+        await Axios.post(process.env.REACT_APP_API_DOMAIN+"/newsletter-leads", {
           email: this.state.email
         })
         document.getElementById('newsletterForm').reset()

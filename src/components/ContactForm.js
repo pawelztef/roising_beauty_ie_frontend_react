@@ -40,7 +40,7 @@ class ContactForm extends React.Component {
     event.preventDefault()
     if(this.validator.allValid()) {
       try {
-        await Axios.post(process.env.REACT_APP_DOMAIN+"/contact-form-leads", {
+        await Axios.post(process.env.REACT_APP_API_DOMAIN+"/contact-form-leads", {
           first_name: this.state.firstName,
           second_name: this.state.secondName,
           email: this.state.email,

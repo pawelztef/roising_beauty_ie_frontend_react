@@ -27,7 +27,7 @@ export default class RespGallery extends Component {
       return (
         <div key={id} className={`grid-item`}>
           <a className="grid-item__lightbox-btn" 
-            href={process.env.REACT_APP_DOMAIN+large} 
+            href={process.env.REACT_APP_API_DOMAIN+large} 
             data-attribute="SRL"
           >
             <div className="grid-item__overlay"></div>
@@ -35,7 +35,7 @@ export default class RespGallery extends Component {
               <RiEyeLine />
             </div>
             <img 
-              src={process.env.REACT_APP_DOMAIN+thumbnail} 
+              src={process.env.REACT_APP_API_DOMAIN+thumbnail} 
               className={`gallery-img`}
               alt={caption}
             />

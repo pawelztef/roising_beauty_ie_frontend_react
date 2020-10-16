@@ -29,9 +29,9 @@ export default function Brand(props) {
     <>
       {props.image &&
         <BrandHref className="pz-nav__brand"
-          href={process.env.REACT_APP_DOMAIN + props.url}>
+          href={process.env.REACT_APP_API_DOMAIN + props.url}>
           <BrandImage id="logo-top" className="pz-nav__brand-img" 
-            src={props.mobile ? "/images/logo-reverse.svg" : process.env.REACT_APP_DOMAIN + props.image.url}
+            src={props.mobile ? "/images/logo-reverse.svg" : process.env.REACT_APP_API_DOMAIN + props.image.url}
             alt={props.alt} 
           />
         </BrandHref>

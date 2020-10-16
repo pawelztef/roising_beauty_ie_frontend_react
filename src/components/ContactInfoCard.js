@@ -29,7 +29,7 @@ const ContactInfoCard = (props) => {
           <h4>Contact Info</h4>
           <ContactDetails {...contact_details}/>
         </div>
-        <Image src={process.env.REACT_APP_DOMAIN + image.url}
+        <Image src={process.env.REACT_APP_API_DOMAIN + image.url}
           className='contact-info__image'/>
       </ContactInfo>
     </div>  

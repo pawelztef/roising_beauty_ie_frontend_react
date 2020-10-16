@@ -30,7 +30,7 @@ class Page extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await Axios.get(process.env.REACT_APP_DOMAIN+'/pages') 
+    const response = await Axios.get(process.env.REACT_APP_API_DOMAIN+'/pages') 
     const data = response.data
     this.setState({ pages: data, isLoading: false })
   }

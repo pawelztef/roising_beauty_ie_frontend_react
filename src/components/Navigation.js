@@ -18,7 +18,7 @@ class Navigation extends React.Component {
 
   async componentDidMount() {
     try {
-      const navbarRes = await Axios.get(process.env.REACT_APP_DOMAIN + '/navbar')
+      const navbarRes = await Axios.get(process.env.REACT_APP_API_DOMAIN + '/navbar')
       const data = navbarRes.data[0]
       const { logo, call_to_action, contact_details, menu, social_media } = data
       this.setState({

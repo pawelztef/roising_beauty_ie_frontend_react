@@ -56,7 +56,7 @@ const Slider = (props) =>  {
                   <div className="slideshow__slide-background-wrap background-absolute">
                     <div className="slideshow__slide-background background-absolute">
                       <div className="slideshow__slide-image-wrap background-absolute">
-                        <div className="slideshow__slide-image background-absolute" style={{backgroundImage: "url(" + process.env.REACT_APP_DOMAIN + entry.image.url + ")"}}></div>
+                        <div className="slideshow__slide-image background-absolute" style={{backgroundImage: "url(" + process.env.REACT_APP_API_DOMAIN + entry.image.url + ")"}}></div>
                       </div>
                     </div>
                   </div>
