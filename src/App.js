@@ -16,19 +16,16 @@ import Navigation from './components/Navigation'
 import HomePage from './components/HomePage'
 import NotFound from './components/NotFound'
 import Page from './components/Page'
-import Spinner from './components/Spinner'
+
 
 
 class App extends React.Component {
-
-
 
   render() {
     return (
       <Router>
         <Route render={({location}) => (
           <>
-            <Spinner loading={true} />
             <Navigation />
             <TransitionGroup>
               <CSSTransition
