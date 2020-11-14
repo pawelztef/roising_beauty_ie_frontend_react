@@ -23,8 +23,8 @@ class AwesomeComponent extends React.Component {
       <div className="sweet-loading">
         <DotLoader
           css={override}
-          size={150}
-          color={"#123abc"}
+          size={80}
+          color={"#a66cd9"}
           loading={this.state.loading}
         />
       </div>
